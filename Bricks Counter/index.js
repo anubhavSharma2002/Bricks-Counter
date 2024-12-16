@@ -16,9 +16,11 @@ function save()
 {
     savecount = count
     let messEl = document.getElementById("mess-el")
+    let totalel = document.getElementById("total-el")
     messEl.innerText = "Previou Enteries" + "-" + savecount
-    totalCount = count
+    totalCount += count
     console.log(totalCount)
+    totalel.innerText = "Total Count" + "-" + totalCount
     countEl.innerText = 0
     count = 0
 }
